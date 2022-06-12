@@ -17,6 +17,7 @@ public class USACOBucket {
 		// HOw do you get a 2d array as an input for file processing?
 		for (int r = 0;  r < 10; r++) {
 			for (int c = 0; c < 10; c++) {
+				input = in.read
 				farm [r][c] = in.readLine().split("");
 			}
 			}
