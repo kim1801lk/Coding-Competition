@@ -28,14 +28,20 @@ public class USACOword {
 		
 			
 			if (currChar + essay[i].length() > numChar) {
-				out.println();
-				currChar = 0;
+				out.println(essay[i] + " ");
+				
+				currChar = essay[i].length();
+				continue;
 			}
 			
-		
 			
-			out.print(essay[i] + " "); // fails test cases because there's a space at the end of each line...
-			currChar = currChar + essay[i].length();
+
+			
+			
+		
+				out.print(essay[i] + " ");
+				currChar = currChar + essay[i].length();
+	
 		
 		}
 		

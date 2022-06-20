@@ -10,7 +10,7 @@ public class CFSoldier {
 		int w = input.nextInt();	//number of wanted bananas
 		//int sum = 0;
 		
-		int sum = (w/2) * (1 + w);
+		int sum = w * (w+ 1 )/2;
 		
 		int totalDollar = sum * k;
 		
@@ -18,7 +18,7 @@ public class CFSoldier {
 //			sum = sum + i*k;
 //		}
 		
-		System.out.println(totalDollar - n);
+		System.out.println(Math.max((totalDollar - n), 0));
 		
 
 	}
