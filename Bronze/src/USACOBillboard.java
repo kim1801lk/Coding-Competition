@@ -54,7 +54,7 @@ public class USACOBillboard {
 	
 	public static boolean covered (int x, int y, int x1, int y1, int x2, int y2) {
 		/*
-		 * return true if (x,y) is covered by the rectangel bounded 
+		 * return true if (x,y) is covered by the rectangle bounded 
 		 * by (x1, y1) and (x2, y2)
 		 * 
 		 * returns false otherwise
