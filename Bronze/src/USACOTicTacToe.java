@@ -47,7 +47,7 @@ public class USACOTicTacToe {
 
 	
 	public static void check(char first, char second, char third) {
-		
+		//stores unique cows in a row/column/diagonal (depending on how the method is called in the main)
 		TreeSet<Character> contained = new TreeSet<>();
 		contained.add(first);
 		contained.add(second);
@@ -58,5 +58,7 @@ public class USACOTicTacToe {
 		else if (contained.size()==2) {
 			teams.add(contained.first() + "" + contained.last());
 		}
+		//if the size exceeds 2 that means there are more than two cows involved and therefore there is no win by a two-cow team!
+		//if the size is 1 that means there is only one cow's initial in the row/column/diagonal and they win
 	}
 }
