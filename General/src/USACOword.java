@@ -3,14 +3,14 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.*;
+//import java.util.*;
 public class USACOword {
 
 	public static void main(String[] args)throws IOException {
 		
 		
-		BufferedReader in = new BufferedReader(new FileReader("input.txt"));
-		PrintWriter out = new PrintWriter("output.txt");
+		BufferedReader in = new BufferedReader(new FileReader("word.in"));
+		PrintWriter out = new PrintWriter("word.out");
 		
 		
 		String [] input = in.readLine().split(" ");
@@ -23,27 +23,28 @@ public class USACOword {
 		
 		int currChar = 0;
 		
+		String line = "";
+		String temp = "";
+		
 		for (int i = 0; i < essay.length; i++) {
 			
-		
+			temp += essay[i];
 			
-			if (currChar + essay[i].length() > numChar) {
-				out.println(essay[i] + " ");
-				
-				currChar = essay[i].length();
-				continue;
+			if (temp.length() <= numChar) {
+				line += essay[i] + " ";
 			}
 			
-			
-
-			
-			
+			else {
+				line = line.substring(0,line.length() - 1);
+				line += "\n"; 
+				temp = "";
+				i--;
+			}	
 		
-				out.print(essay[i] + " ");
-				currChar = currChar + essay[i].length();
-	
 		
 		}
+		
+		out.print(line.substring(0, line.length()-1));
 		
 		in.close();
 		out.close();

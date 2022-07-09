@@ -1,6 +1,2 @@
-5
-4
-7
-8
-6
-4
+10 7
+hello my name is Bessie and this is my essay
