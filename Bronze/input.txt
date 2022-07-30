@@ -1,5 +1,8 @@
-4
-bird 2 flies eatsworms
-cow 4 eatsgrass isawesome makesmilk goesmoo
-sheep 1 eatsgrass
-goat 2 makesmilk eatsgrass
+7 10
+7 3
+5 5
+9 7
+3 1
+7 7
+5 3
+9 1

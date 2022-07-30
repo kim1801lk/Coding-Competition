@@ -24,7 +24,7 @@ public class USACOGuessTheAnimal {
 		
 		
 		int max = 0;
-		for (int a1= 0; a1 <aNum; a1++) {
+		for (int a1= 0; a1 < aNum; a1++) {
 			for (int a2 = a1+1; a2 <aNum; a2++) {
 				HashSet<String> a1Copy = new HashSet<>(animals[a1]);
 				a1Copy.retainAll(animals[a2]);
