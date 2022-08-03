@@ -4,8 +4,8 @@ public class USACOLoadBalancing {
 
 	public static void main(String[] args) throws IOException {
 		
-		Scanner in = new Scanner (new FileReader("input.txt"));
-		PrintWriter out = new PrintWriter("output.txt");
+		Scanner in = new Scanner (new FileReader("balancing.in"));
+		PrintWriter out = new PrintWriter("balancing.out");
 
 		
 		int cow = in.nextInt();
@@ -19,7 +19,7 @@ public class USACOLoadBalancing {
  		for (int i = 0; i < cow; i++) {
 			x[i] = in.nextInt();
 			y[i] = in.nextInt();
-			vfences.add(x[i] +1);
+			vfences.add(x[i] + 1);
 			hfences.add(y[i] + 1);
 		}
  		
@@ -37,13 +37,13 @@ public class USACOLoadBalancing {
  						topLeft++;
  					}
  					else if (x[i] > v && y[i] > h) {
- 						topLeft++;
+ 						topRight++;
  					}
  					else if (x[i] < v && y[i] < h) {
- 						topLeft++;
+ 						bottomLeft++;
  					}
  					else if (x[i] > v && y[i] < h) {
- 						topLeft++;
+ 						bottomRight++;
  					}
  				}
  				
