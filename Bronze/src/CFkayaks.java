@@ -9,6 +9,7 @@ public class CFkayaks {
 		//take input
 		Scanner in = new Scanner (System.in);
 		
+		
 		int N = in.nextInt() * 2; 
 		int [] people = new int[N];
 		for (int i = 0; i < N; i++) {

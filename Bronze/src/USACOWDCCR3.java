@@ -12,6 +12,7 @@ public class USACOWDCCR3 {
 		PrintWriter out = new PrintWriter("cowqueue.out");
 		
 		
+		
 		int cows = in.nextInt();
 		
 		int [] arrival = new int [cows];
